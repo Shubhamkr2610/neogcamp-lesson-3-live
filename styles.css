@@ -46,7 +46,8 @@ hr {
 }
 
 .link-secondary {
-    color: var(--primary-color);
+    color: white;
+    background-color: var(--dark-gray);
     border-radius: 0.5rem;
     border: 1px solid var(--primary--color);
 }
@@ -88,6 +89,11 @@ hr {
 
 .navigation .link-active {
     font-weight: bold;
+}
+
+#projects-button, #blog-button{
+    background-color: var(--primary-color);
+    color: white;
 }
 
 /** header**/
