@@ -112,7 +112,7 @@ hr {
 
 .hero .hero-heading {
     text-align: center;
-    pading-top: 1rem;
+    padding-top: 1rem;
     color: var(--dark-gray);
 }
 
@@ -157,4 +157,6 @@ hr {
 .footer ul{
     padding-inline-start: 0px;
 }
- 
+.page-container{
+    min-height: 70vh;
+}
