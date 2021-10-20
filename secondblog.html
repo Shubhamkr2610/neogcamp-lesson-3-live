@@ -29,102 +29,79 @@
 
         <h3>
             <li>
-
-                <div class="container container-center ">
-                    <h1> Programming Languages </h1>
-
-                    Language is a mode of communication that is used to share ideas, opinions with each other. For
-                    example, if we want to teach someone, we need a language that is understandable by both
-                    communicators.
-
-                    <p>
-                        As we know, to communicate with a person, we need a specific language, similarly to communicate
-                        with computers, programmers also need a language is called Programming language.
-                    </p>
-
-                    <p>
-                        A programming language is a computer language that is used by programmers (developers) to
-                        communicate with computers. It is a set of instructions written in any specific language ( C,
-                        C++, Java, Python) to perform a specific task.
-
-                    </p>
-
-                    Here are a couple of programming languages you could tackle :
-
-                    <h2 class="hero-heading"> C :-<span class="heading-inverted"> </span></h2>
-
-                    Let’s start off with one of the most established programming languages still used today, C.
-                    <p>
-                        C is a versatile language that has uses in many different areas. It’s mainly used for creating
-                        system applications, meaning that operating systems such as Windows and Linux use a lot of C
-                        programming. You can also use C to create games, graphics, and apps that use lots of
-                        calculations.
-                    </p>
+                <header class="hero">
+                    <img class="hero-img" src="images/HEAD.png" />
 
 
-                    <h2 class="hero-heading"> C++ :-<span class="heading-inverted"> </span></h2>
-
-                    C++ is a general-purpose programming language that was developed as an enhancement of the C language
-                    to include object-oriented paradigm. It is an imperative and a compiled language.
-                    <p>
-                        C++ is a middle-level language rendering it the advantage of programming low-level (drivers,
-                        kernels) and even higher-level applications (games, GUI, desktop apps etc.). The basic syntax
-                        and code structure of both C and C++ are the same.
-                    </p>
+                    <div class="container container-center ">
+                        <h1> How can a translator web app created using HTML,CSS and JAVASCRIPT </h1>
+                        <p>There are three things that are needed for an application-input,processing and output.For
+                            processing in this app means translation.We will be using funtranslation api which returns
+                            translated content.</p>
 
 
-                    <h2 class="hero-heading">Python :-<span class="heading-inverted"> </span></h2>
-
-                    Python is an object-oriented, high-level programming language launched in 1992. It’s built in such a
-                    way that it’s relatively intuitive to write and understand, making it ideal for those who want rapid
-                    development.
-                    <p>
-                        Python has many applications. As well as being good for general use, such as for web
-                        applications, it also has many areas of specialisation. A good example of the latter is for
-                        artificial intelligence (AI) and machine learning.
-                    </p>
+                        <h2>Funtranslations API</h2>
 
 
-                    <h2 class="hero-heading"> SQL :-<span class="heading-inverted"> </span></h2>
+                        <p>There are so many translation languages available which can be used for translations.Here we
+                         will be using minion language and to get response from the api we need to send the url in
+                        the given format-
+                        </p>
 
-                    If you’re interested in areas like database management, SQL is a language that you simply have to
-                    know. In fact, most developers need to have at least a basic knowledge of the language.
-                    <p>
-                        Structured Query Language (SQL, sometimes called Sequel), is a domain-specific language designed
-                        for managing data held in databases. Unlike many of the different programming languages
-                        mentioned so far, this isn’t a general-purpose one, meaning its use is far narrower.
-                    </p>
+                        <img class="code-img" src="images/blog22.jpg" />
 
+                        <h2>Taking user input</h2>
 
-                    <h2 class="hero-heading">JavaScript :-<span class="heading-inverted"> </span></h2>
-                    Despite its name, JavaScript isn’t directly related to Java. However, it does use a Java-like
-                    syntax, which is where the name comes from. If you’re interested in client-side web browser coding,
-                    this is a language you want to learn.
-                    <p>
-                        JavaScript is a high-level, object-oriented programming language (although that second point is
-                        up for some debate). The language was created in the early days of the internet, back in 1995.
-                        You’ll find that all major web browsers have JavaScript support.
-                    </p>
-
-                    <p>
-                        As mentioned, JavaScript is a language used to write code that runs in web browsers. As such, it
-                        has a wide range of applications and is especially useful for making web pages interactive and
-                        responsive. It’s often used alongside HTML and CSS to add things like animations, video players,
-                        and even browser-based games.
-                    </p>
-
-                    <p>
-                        If you are not really into a programming language, don't despair! The programming world offers a
-                        variety of other subjects for you to consider.
-                    </p>
+                        <p>For any translator app, the first thing needed is the user's input so we that using textarea
+                        tag of HTML.
+                        </p>
 
 
-                    <p>
-                        Tightly linked to programming you'll find databases and a big data analysis, both subjects of
-                        immense interest in the IT community.
-                    </p>
+
+                        <img class="code-img" src="images/code.png" />
+
+                        <h2>Processing user input</h2>
 
 
+                        <p>For processing which is done in our app.js, we reference textarea in javascript using  document.querySelector()
+                        </p>
+
+                        <img class="code-img" src="images/process.png" />
+
+                        <p>Now we have reference to input and to extract the value from this we will use textInp.value . But first, we will make a function to get our translation url which we will be using it to fetch translated text from the server using the funtranslations api
+                        </p>
+
+                        <img class="code-img" src="images/process2.png" />
+
+                        <p>Here serverUrl is the base url which is required for API. Now a fetch function which gets
+                            the translated text and displays output using innerText on an output element also referenced
+                            using document.querySelector()
+                        </p>
+
+                        <img class="code-img" src="images/process3.png" />
+
+
+
+                        <h2>Translated output to the user</h2>
+
+
+                        <p>We will create a div that has no text and will show output after processing when the button
+                            is clicked.
+                        </p>
+
+                        <img class="code-img" src="images/process4.png" />
+
+                        <p>Button referenced in the script and added an event listener addEventListener() on it which
+                            waits for a click on the button and then calls our clickHandler function.
+                        </p>
+
+
+                        <img class="code-img" src="images/process5.png" />
+                        <p>To check the live demo of this app you can go to Banana app
+                            Also I have created a repo on github.
+                        </p>
+
+                        <p>Suggestions are welcome from all of you. Thank You.</p>
 
             </li>
 
@@ -134,20 +111,17 @@
         <div class="footer-header">Social Media presence</div>
         <ul class="social-links list-non-bullet">
             <li class="list-item-inline">
-                <a class="link" 
-                href="https://github.com/Shubhamkr2610">
+                <a class="link" href="https://github.com/Shubhamkr2610">
                     GitHub
                 </a>
             </li>
             <li class="list-item-inline">
-                <a class="link" 
-                href="https://www.linkedin.com/in/shubham-kumar-6625b8217">
-                     LinkedIn
+                <a class="link" href="https://www.linkedin.com/in/shubham-kumar-6625b8217">
+                    LinkedIn
                 </a>
-            </li> 
+            </li>
             <li class="list-item-inline">
-                <a class="link"
-                 href="https://replit.com/@S-30SHUBHAM">
+                <a class="link" href="https://replit.com/@S-30SHUBHAM">
                     Repl
                 </a>
             </li>
