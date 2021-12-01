@@ -26,86 +26,74 @@
         </ul>
     </nav>
     <ul>
-
-        <h3>
-            <li>
-                <header class="hero">
-                    <img class="hero-img" src="images/HEAD.png" />
-
-
-                    <div class="container container-center ">
-                        <h1> How can a translator web app created using HTML,CSS and JAVASCRIPT </h1>
-                        <p>There are three things that are needed for an application-input,processing and output.For
-                            processing in this app means translation.We will be using funtranslation api which returns
-                            translated content.</p>
+        <img class="hero-img" src="images/git-and-github-logo.png" />
+        <h1> What is Github?<h1>
+                <h3>Github is a remote repositry which is an hosting service for git repositories. <br>
+                    We will all have git repositories in our local  , so once we have done our code we will
+                    commit the changes into our local repositry.<br>
+                    Github is a service which will host all our repositories remotely and those
+                    repositry we can share within the team or we can share the repositories globally.<br>
+                    <!-- So github is a hosting service for git repositories. -->
+                </h3>
 
 
-                        <h2>Funtranslations API</h2>
+                <h1>What is Git?</h1>
+                <h3>Git is a revision control system used to track changes in computer files.<br>
+                    It is a tool to manage our code and file history while coordinataing work remotely or globally on
+                    those files with other .</h3>
+                    <h3>In Git, We can create the branches , we can merge the branches , resolve the conflicts .</h3>
+
+                <h2>Some points  on Git vs GitHub</h2>
+                
+                <h3>Git is the tool , while Github is the service to use Git.<h3>
+                    
+                    <h3>Git is a simple tool which we can install in our local , which acts as a local repositories
+                    where as github is a service which acts as a remote repositry , we can store or we can have all the repositories globally in a Github .</h3>
+                    <h3>Git stores and catalogs changes in code repository whereas Github provides a platform as collabration effort to bring teams together.</h3>
+                    <img class="hero-img" src="images/gitty.png" />
 
 
-                        <p>There are so many translation languages available which can be used for translations.Here we
-                         will be using minion language and to get response from the api we need to send the url in
-                        the given format-
-                        </p>
+                <h1>List of some most used Git Commands.</h1>
 
-                        <img class="code-img" src="images/blog22.jpg" />
-
-                        <h2>Taking user input</h2>
-
-                        <p>For any translator app, the first thing needed is the user's input so we that using textarea
-                        tag of HTML.
-                        </p>
+                <h2>1. Git Push</h2>
+                <h3>
+                    To make all our committed changes available to our teammates, will have to push them to the
+                    remote origin.</h3>
 
 
+                <h2>2. Git Pull</h2>
+                <h3> we would want to have the latest updates from teammates as well!
 
-                        <img class="code-img" src="images/code.png" />
-
-                        <h2>Processing user input</h2>
-
-
-                        <p>For processing which is done in our app.js, we reference textarea in javascript using  document.querySelector()
-                        </p>
-
-                        <img class="code-img" src="images/process.png" />
-
-                        <p>Now we have reference to input and to extract the value from this we will use textInp.value . But first, we will make a function to get our translation url which we will be using it to fetch translated text from the server using the funtranslations api
-                        </p>
-
-                        <img class="code-img" src="images/process2.png" />
-
-                        <p>Here serverUrl is the base url which is required for API. Now a fetch function which gets
-                            the translated text and displays output using innerText on an output element also referenced
-                            using document.querySelector()
-                        </p>
-
-                        <img class="code-img" src="images/process3.png" />
+                The git pull command allows us to fetch all the changes that our teammates pushed and automatically
+                merge them
+                into our local repo.</h3>
 
 
+                <h2>3. Git Commit</h2>
+                <h3> Git Commit command like a checkpoint in our development process.
 
-                        <h2>Translated output to the user</h2>
+                It’s commonly used to save our changes after completing a specific work .
 
-
-                        <p>We will create a div that has no text and will show output after processing when the button
-                            is clicked.
-                        </p>
-
-                        <img class="code-img" src="images/process4.png" />
-
-                        <p>Button referenced in the script and added an event listener addEventListener() on it which
-                            waits for a click on the button and then calls our clickHandler function.
-                        </p>
+                Every time we commit our code changes, we also include a message to briefly describe the changes
+                we made.
+                This helps other team members quickly understand what was added, changed, or removed.</h3>
 
 
-                        <img class="code-img" src="images/process5.png" />
-                        <p>To check the live demo of this app you can go to Banana app
-                            Also I have created a repo on github.
-                        </p>
+                <h2>4. Git Init</h2>
+                <h3>The git init command is usually the first command you’d run in any new project .<br>
+                    we use it to initialize an empty repo.</h3>
 
-                        <p>Suggestions are welcome from all of you. Thank You.</p>
 
-            </li>
+                <h2>5. Git Clone</h2>
+                <h3>The git clone command is used to download the source code from a remote repository like GitHub. 
+                </h3>
 
-        </h3>
+                <h2>3. Git Branch</h2>
+                <h3>Branch is one of the most important functionalities of Git. This allows teams
+                    to work on the same code base in parallel. Say, If two team are working on same code base then by creating a separate branch for each feature, both team can work on the same code base in parallel without having to worry about conflicts (at least while they are  writing the code).</h3>
+
+                    <h2>I will keep adding more points to this list as my learning grows...</h2>
+
     </ul>
     <footer class="footer">
         <div class="footer-header">Social Media presence</div>
@@ -128,6 +116,8 @@
 
         </ul>
     </footer>
+
+
 
 </body>
 
